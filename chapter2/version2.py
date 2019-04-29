@@ -79,4 +79,4 @@ if __name__ == '__main__':
     logging.info("Process completed")
 
 
-# python version2.py --api_key=87d06047a03d842ac1e5ad1ea99a3355 --database=postgres --user=developer_de --password=developer_de --host=chapter2.cn2puphomhj7.us-east-1.rds.amazonaws.com
+
