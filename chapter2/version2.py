@@ -15,7 +15,7 @@ def persist_single_row(sql_connection_parameters, record):
     :param record: dictionary with one row of data
     :return:
     """
-    sql = 'INSERT INTO weather.daily_weather (extract_date, sunset, sunrise, humidity, max_temperature, ' \
+    sql = 'INSERT INTO "weather.daily_weather" (extract_date, sunset, sunrise, humidity, max_temperature, ' \
           'min_temperature, status) VALUES (%s, %s, %s, %s, %s, %s, %s)'
     try:
         db_connection = psycopg2.connect(**sql_connection_parameters)
