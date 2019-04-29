@@ -78,5 +78,3 @@ if __name__ == '__main__':
     logging.debug(result_record)
     logging.info("Process completed")
 
-
-
