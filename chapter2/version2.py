@@ -15,8 +15,8 @@ def persist_single_row(sql_connection_parameters, record):
     :param record: dictionary with one row of data
     :return:
     """
-    sql = 'INSERT INTO daily_weather (extract_date, sunset, sunrise, humidity, max_temperature, min_temperature, ' \
-          'status) VALUES (%s, %s, %s, %s, %s, %s, %s)'
+    sql = 'INSERT INTO weather.daily_weather (extract_date, sunset, sunrise, humidity, max_temperature, ' \
+          'min_temperature, status) VALUES (%s, %s, %s, %s, %s, %s, %s)'
     try:
         db_connection = psycopg2.connect(**sql_connection_parameters)
         cursor = db_connection.cursor()
@@ -79,3 +79,4 @@ if __name__ == '__main__':
     logging.info("Process completed")
 
 
+# python version2.py --api_key=87d06047a03d842ac1e5ad1ea99a3355 --database=postgres --user=developer_de --password=developer_de --host=chapter2.cn2puphomhj7.us-east-1.rds.amazonaws.com

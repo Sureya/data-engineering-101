@@ -1,6 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS weather;
 
-CREATE TABLE IF NOT EXISTS daily_weather
+CREATE TABLE IF NOT EXISTS weather.daily_weather
 (
 	sunset DATE NOT NULL,
 	sunrise DATE NOT NULL,
