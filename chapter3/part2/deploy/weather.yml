@@ -3,9 +3,14 @@
   gather_facts: false
   vars:
     app_name: "weather_app"
-    user: "ubuntu"
     app_path: "python/batch"
     executable: "extract_weather.py"
+    api_key: "<YOUR-API-KEY>"
+    database_nme: "<RDS-DATABASE-NAME>"
+    db_user: "<RDS-DB-USER>"
+    db_password: "<RDS-DB-PWD>"
+    host: "<RDS-DB-ENDPOINT>"
+    repo: "git@github.com:Sureya/data-engineering-101.git"
 
   roles:
     - python-app
@@ -14,3 +19,12 @@
   pre_tasks:
     - include: roles/common_tasks/ubuntu16_python2.yml
       static: yes
+
+  post_tasks:
+    - name: Ensure python job that runs at 11"
+      cron:
+        name: "python-app-11"
+        minute: "0"
+        hour: "11"
+        job: "cd {{app_dir}} ; {{venv_dir}}/bin/python3 {{executable}} --api_key={{api_key}} --database={{database_nme}} --user={{db_user}} --password={{db_password}} --host={{host}}"
+

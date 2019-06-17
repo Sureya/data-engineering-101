@@ -3,7 +3,7 @@
 # This is your SSH key for Github
 ssh-add -K ~/.ssh/id_rsa
 
-export DNS_NAME="ec2-3-8-131-190.eu-west-2.compute.amazonaws.com"
+export EC2_DNS_NAME="<DNS>"
 echo  '[aws]' > staging
 echo ${DNS_NAME} >> staging
 
