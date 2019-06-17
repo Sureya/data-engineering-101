@@ -7,6 +7,8 @@ from pyowm.exceptions import api_response_error
 # custom
 from version2 import fetch_weather_data
 
+# TODO: Re-write test cases for V2
+
 
 class TestWeatherApp(unittest.TestCase):
     def setUp(self):
