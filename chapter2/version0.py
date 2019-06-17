@@ -2,7 +2,7 @@ import pyowm
 import time
 import json
 
-API_KEY = "87d06047a03d842ac1e5ad1ea99a3355"
+API_KEY = "<MASKED>"
 weather = pyowm.OWM(API_KEY)
 observation = weather.weather_at_place('London,GB')
 response = observation.get_weather()
