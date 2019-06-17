@@ -1,0 +1,13 @@
+repo: "git@github.com:Sureya/aws-mini-project.git"
+
+repo_dest: "/home/{{ user }}/apps"
+venv_path: "/home/{{user}}/venvs"
+requirements_path: "{{ repo_dest }}/{{ app_path}}/requirements.txt"
+app_dir: "{{repo_dest}}/{{ app_path }}"
+venv_dir: "{{venv_path}}/{{app_name}}"
+
+api_key: "432725751d6400d23f3652784b3d5938"
+database_nme: "developer"
+db_user: "developer"
+db_password: "developer"
+host: "developer.c2oe33zxhqdd.eu-west-2.rds.amazonaws.com"

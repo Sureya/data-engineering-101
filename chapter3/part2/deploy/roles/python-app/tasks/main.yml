@@ -1,0 +1,11 @@
+- include: roles/common_tasks/install_python36.yml
+- include: roles/common_tasks/clone_git_repo.yml
+- include: roles/common_tasks/create_virtual_env.yml
+
+- name: Ensure python job that runs at 11"
+  cron:
+    name: "python-app-11"
+    minute: "0"
+    hour: "11"
+    job: "cd {{app_dir}} ; {{venv_dir}}/bin/python3 {{executable}} --api_key={{api_key}} --database={{database_nme}} --user={{db_user}} --password={{db_password}} --host={{host}}"
+

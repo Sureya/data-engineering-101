@@ -1,0 +1,16 @@
+- hosts: aws
+  become: true
+  gather_facts: false
+  vars:
+    app_name: "weather_app"
+    user: "ubuntu"
+    app_path: "python/batch"
+    executable: "extract_weather.py"
+
+  roles:
+    - python-app
+    - common_tasks
+
+  pre_tasks:
+    - include: roles/common_tasks/ubuntu16_python2.yml
+      static: yes

@@ -1,0 +1,17 @@
+- name: ensure Git is installed via the system package
+  apt: name=git-core state=present update_cache=yes
+  become: true
+  become_user: root
+
+- set_fact: branch="master"
+  when: branch is undefined
+
+- name: Clone github repo
+  git:
+    repo: "{{ repo }}"
+    dest: "{{ repo_dest }}"
+    clone: yes
+    accept_hostkey: yes
+    update: yes
+    force: yes
+    version: "{{ branch }}"
