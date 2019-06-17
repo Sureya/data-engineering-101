@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 
 # This is your SSH key for Github
-ssh-add -K ~/.ssh/id_rsa
+export ENV="dev"
 
-export EC2_DNS_NAME="<DNS>"
-echo  '[aws]' > staging
-echo ${DNS_NAME} >> staging
+export API_KEY="432725751d6400d23f3652784b3d5938"
+export DB_NAME="data_enginner"
+export DB_USER="developer"
+export DB_PWD="developer"
+export DB_HOST="localhost"
 
-ansible-playbook aws_python_app.yml --private-key=~/.ssh/ec2_keypair_london.pem -K -u ubuntu -i staging
+ssh-add -K ~/.ssh/cloudReach                                                                                                                                                                                                                                                                                                                                99 ↵
+
+export EC2_DNS_NAME="ec2-3-8-17-211.eu-west-2.compute.amazonaws.com"
+echo  '[aws]' > ${ENV}
+echo ${EC2_DNS_NAME} >> ${ENV}
+
+ansible-playbook weather.yml --private-key=~/.ssh/ec2_keypair_london.pem -K -u ubuntu -i ${ENV}

@@ -5,12 +5,14 @@
     app_name: "weather_app"
     app_path: "python/batch"
     executable: "extract_weather.py"
-    api_key: "<YOUR-API-KEY>"
-    database_nme: "<RDS-DATABASE-NAME>"
-    db_user: "<RDS-DB-USER>"
-    db_password: "<RDS-DB-PWD>"
-    host: "<RDS-DB-ENDPOINT>"
-    repo: "git@github.com:Sureya/data-engineering-101.git"
+    repo: "https://github.com/Sureya/data-engineering-101.git"
+
+    api_key: "{{ lookup('env','API_KEY') }}"
+    database_nme: "{{ lookup('env','DB_NAME') }}"
+    db_user: "{{ lookup('env','DB_USER') }}"
+    db_password: "{{ lookup('env','DB_PWD') }}"
+    host: "{{ lookup('env','DB_HOST') }}"
+
 
   roles:
     - python-app

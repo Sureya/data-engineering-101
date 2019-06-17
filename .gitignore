@@ -1,6 +1,9 @@
 # Catch all tf files
 *.DS_Store
 staging
+dev
+prod
+
 
 
 *.tfvars
