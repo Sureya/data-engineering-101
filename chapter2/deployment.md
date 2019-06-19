@@ -1,6 +1,5 @@
 ---
 title: deployment
-short_name: Sureya
 layout: post
 ---
 
