@@ -32,12 +32,12 @@ We will be mainly focusing on putting different technologies together to solve r
 
 | Chapter | Focus | Learning Outcome | 
 |------|-------------|:----:|
-| [Chapter-1](https://github.com/Sureya/data-engineering-101/tree/master/chapter1) | Production Code | Ability to differentiate good code from bad code|
-| [Chapter-2]((https://github.com/Sureya/data-engineering-101/tree/master/chapter2)) | Deploying Applications in Cloud VM | Basic knowledge on AWS & Ansible| 
-| Chapter-3 | Orchestrating Applications in VM | Basic understanding of Airflow|
-| Chapter-4 | Containerising Application | Basic understanding of Docker|
-| Chapter-5 | Deploying Containers | Basic understanding of ECS, Fargate, Batch & CFN| 
-| Chapter-6 | Orchestrating Containers | Basic Understanding of EKS|
-| Chapter-7 | CI / CD pipeline | Basic understanding of CI / CD pipelines| 
+| [Chapter-1](https://github.com/Sureya/data-engineering-101/tree/master/chapter1) | Production Code | Ability to differentiate good code from bad code
+| [Chapter-2](https://github.com/Sureya/data-engineering-101/tree/master/chapter2) | Deploying Applications in Cloud VM | Basic knowledge on AWS & Ansible 
+| Chapter-3 | Orchestrating Applications in VM | Basic understanding of Airflow
+| Chapter-4 | Containerising Application | Basic understanding of Docker 
+| Chapter-5 | Deploying Containers | Basic understanding of ECS, Fargate, Batch & CFN 
+| Chapter-6 | Orchestrating Containers | Basic Understanding of EKS 
+| Chapter-7 | CI / CD pipeline | Basic understanding of CI / CD pipelines 
  
 
