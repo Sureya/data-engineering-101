@@ -1,4 +1,8 @@
-# Chapter - 2
+---
+title: python
+layout: post
+---
+# Chapter - 1
 
 # Tech Stack
 *   Programming language: [Python3.6](https://www.tutorialspoint.com/python3/)
