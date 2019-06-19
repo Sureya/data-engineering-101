@@ -1,3 +1,8 @@
+---
+title: Python
+layout: template
+filename: chapter1
+--- 
 # Chapter - 2
 
 # Tech Stack

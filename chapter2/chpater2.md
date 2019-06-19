@@ -1,3 +1,9 @@
+---
+title: Deployment
+layout: template
+filename: chapter2
+--- 
+
 # Chapter - 2
 In this chapter, we will be exploring different ways to deploy our python application in AWS. 
 For the ease of understanding, we will be splitting this chapter into 3 sections, 
@@ -137,7 +143,7 @@ ${EXECUTABLE}/python ${EXECUTABLE_FILE_PATH} --api_key=${API_KEY} --database=${D
 If the last command executes without any errors, we have successfully deployed our python application manually.
 
 
-## 2.4 Automate configuration management & Application packaging
+### 2.4 Automate configuration management & Application packaging
 
 [Repo Link](https://github.com/Sureya/data-engineering-101/tree/master/chapter3/part2/deploy)
 
