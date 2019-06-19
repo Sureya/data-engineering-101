@@ -1,5 +1,6 @@
 ---
-title: python
+title: Python
+short_name: Sureya
 layout: post
 ---
 # Chapter - 1
