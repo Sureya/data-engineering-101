@@ -1,4 +1,4 @@
-# Chapter - 3
+# Chapter - 2
 In this chapter, we will be exploring different ways to deploy our python application in AWS. 
 For the ease of understanding, we will be splitting this chapter into 3 sections, 
 
@@ -23,7 +23,7 @@ Assuming we have a working application ready to deploy, we need a minimum of 3 s
 # Tech Stack
 
 *   Cloud - [AWS](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/) 
-*   Application - Python3.6
+*   Application - Python2.6
 *   OS - [ubuntu](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/) 
 *   [Shell script](https://www.shellscript.sh/index.html)
 *   [Ansible](https://scotch.io/tutorials/getting-started-with-ansible)
@@ -38,7 +38,7 @@ want to automate it in the first place. If you are familiar with what deployment
 why we need it, you can skip to section 2.
 
 
-## 3.1: Creating Infrastructure
+## 2.1: Creating Infrastructure
 
 Reference Links
 
@@ -47,7 +47,7 @@ Reference Links
 *   [Bash](https://www.howtoforge.com/tutorial/linux-shell-scripting-lessons/)
 
 
-### 3.1.1 - Create RDS database
+### 2.1.1 - Create RDS database
 
 *   Select RDS service and click create a database
 *   Select PostgreSQL from engine option
@@ -64,7 +64,7 @@ Reference Links
 *   Make note of host value from the database
 
 
-### 3.1.2 - Create an EC2 instance
+### 2.1.2 - Create an EC2 instance
 
 *   Proceed to EC2 dashboard 
 *   Quick guide for launching EC2 instance
@@ -79,7 +79,7 @@ Reference Links
 *   Once the instance is created,  login into your server via SSH as described [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
 
 
-## 3.2: Configuration Management
+## 2.2: Configuration Management
 
 	Before we can begin to package our Python application we need to install system packages, to get our server to the desired configuration. Since we will be running Python application which is downloaded from Github, let's install the packages needed for that.
 
@@ -87,16 +87,16 @@ Reference Links
 ```bash
 # Install required system-level packages
 yes | sudo apt-get install git
-yes | sudo add-apt-repository ppa:jonathonf/python-3.6
+yes | sudo add-apt-repository ppa:jonathonf/python-2.6
 yes | sudo apt-get update
-yes | sudo apt-get install python3.6
+yes | sudo apt-get install python2.6
 yes | sudo apt-get install python3-pip
 yes | sudo apt-get install python3-venv
 ```
 
 
 
-## 3.3: Packaging & Deploying the application
+## 2.3: Packaging & Deploying the application
 
 After installing system packages we can start packaging our application by creating virtualenv and installing python dependencies into the env.
 
@@ -137,7 +137,7 @@ ${EXECUTABLE}/python ${EXECUTABLE_FILE_PATH} --api_key=${API_KEY} --database=${D
 If the last command executes without any errors, we have successfully deployed our python application manually.
 
 
-## 3.4 Automate configuration management & Application packaging
+## 2.4 Automate configuration management & Application packaging
 
 [Repo Link](https://github.com/Sureya/data-engineering-101/tree/master/chapter3/part2/deploy)
 
