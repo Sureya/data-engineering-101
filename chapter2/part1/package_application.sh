@@ -6,7 +6,7 @@ export REPO_NAME="data-engineering-101"
 export REPO_URL="https://github.com/Sureya/data-engineering-101.git"
 export FILES_DIRNAME="/home/ubuntu/code"
 export EXECUTABLE="/home/ubuntu/application_envs/weather_batch_app/bin"
-export EXECUTABLE_FILE_PATH="/home/ubuntu/code/data-engineering-101/chapter2/version2.py"
+export EXECUTABLE_FILE_PATH="/home/ubuntu/code/data-engineering-101/chapter1/version2.py"
 
 # All credentials needed to execute our python application
 export API_KEY="<API_KEY_GOES_HERE>"
