@@ -1,8 +1,3 @@
----
-title: Data Engineering 101
-layout: template
-filename: index
---- 
 
 # Chapter - 1
 
