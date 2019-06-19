@@ -1,9 +1,3 @@
----
-title: Deployment
-layout: template
-filename: chapter2
---- 
-
 # Chapter - 2
 In this chapter, we will be exploring different ways to deploy our python application in AWS. 
 For the ease of understanding, we will be splitting this chapter into 3 sections, 
