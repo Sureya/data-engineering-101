@@ -171,9 +171,11 @@ In the next part, we will be dealing with V2 of our code which includes, databas
 
 ## Step 2 Python application with persistent storage
 
-	When we execute the script, we can see we successfully fetch all the data we need. But we haven’t stored the data anywhere yet, we will be using PSQL to persist our data, for local development this chapter assumes that you have PSQL installed in your local machine.
-
-	To get started we need to design a simple relational table. Very broadly speaking, the process of deciding how many tables we need, how many what are the columns in each table, and type of data each column is going to hold, is called Data Modeling. For this example, to keep things simple we will be storing our data in a single table as follows,
+When we execute the script, we can see we successfully fetch all the data we need. But we haven’t stored the data anywhere yet,
+we will be using PSQL to persist our data, for local development this chapter assumes that you have PSQL installed in your local machine.
+To get started we need to design a simple relational table. Very broadly speaking, the process of deciding how many tables we need, 
+how many what are the columns in each table, and type of data each column is going to hold, is called Data Modeling. For this example, 
+to keep things simple we will be storing our data in a single table as follows,
 
 
 SQL script to create this table would be as follows,

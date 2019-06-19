@@ -26,7 +26,7 @@ as there are so many other blogs serving the purpose.
 
 # Scope of the tutorial 
 
-Even though this tutorials initial few chapters covers the basics of Python & AWS, *this is NOT an extensive tutorial any single technology*, reference will be provided where suitable, 
+Even though this tutorials initial few chapters covers the basics of Python & AWS, _this is NOT an extensive tutorial any single technology_, reference will be provided where suitable, 
 We will be mainly focusing on putting different technologies together to solve real world problems. 
 
 
