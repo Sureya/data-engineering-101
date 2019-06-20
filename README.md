@@ -1,7 +1,4 @@
 
-# Chapter - 1
-
-
 #  Introduction 
 
 If you are a self-taught Data Engineer, then you know how hard and time consuming it is. 
