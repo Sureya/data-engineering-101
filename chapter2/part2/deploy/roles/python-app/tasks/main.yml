@@ -1,0 +1,3 @@
+- include: roles/common_tasks/install_python36.yml
+- include: roles/common_tasks/clone_git_repo.yml
+- include: roles/common_tasks/create_virtual_env.yml
