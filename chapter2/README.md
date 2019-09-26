@@ -7,7 +7,7 @@ layout: post
 In this chapter, we will be exploring different ways to deploy our python application in AWS. 
 For the ease of understanding, we will be splitting this chapter into 3 sections, 
 
-*   **Section 1**: We will be deploying the application in AWS manually, by creating resource through AWS web console
+*   **Section 1**: We will be deploying the application in EC2 instance
 *   **Section 2**: In this section, we will be writing a deployment script in Ansible
 *   **Section 3**: In this section, we will be writing terraform scripts to create the AWS resource needed.
 
@@ -81,8 +81,6 @@ Reference Links
     *   Click: **Review & Launch**
     *   When you press the launch button, you will be prompted to select the key pair if you already have one, otherwise you will be asked to create one, please secure the file in your local machine, we will be using that key pair for all our exercises.
 *   Detailed instructions available [here](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-1-launch-instance.html)
-*   Once the instance is created,  login into your server via SSH as described [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
-
 
 ## 2.1.3: Configuration Management
 
@@ -90,12 +88,15 @@ By this stage, we have the database and ec2 instance up and running. Now we have
 instance and install all the necessary components so that we can run our python application to 
 fetch the data from the internet. 
 
+*  If you are new to SSH please refer [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+
+Once you have successfully logged in, enter the following command in the exact same order. 
 ```bash
 # Install required system-level packages
 yes | sudo apt-get install git
-yes | sudo add-apt-repository ppa:jonathonf/python-2.6
+yes | sudo add-apt-repository ppa:jonathonf/python-3.6
 yes | sudo apt-get update
-yes | sudo apt-get install python2.6
+yes | sudo apt-get install python3.6
 yes | sudo apt-get install python3-pip
 yes | sudo apt-get install python3-venv
 ```
@@ -104,7 +105,8 @@ yes | sudo apt-get install python3-venv
 
 ## 2.1.4: Packaging & Deploying the application
 
-After installing system packages we can start packaging our application by creating virtualenv and installing python dependencies into the env.
+After installing system packages we can start packaging our application by creating virtualenv and 
+installing python dependencies into the env.
 
 
 ```bash
@@ -140,8 +142,8 @@ ${EXECUTABLE}/python ${EXECUTABLE_FILE_PATH} --api_key=${API_KEY} --database=${D
 --user=${DB_USER_NAME} --password=${DB_PASSWORD} --host=${DB_HOST}
 ```
 
-If the last command executes without any errors, we have successfully deployed our python application manually.
-
+If all the commands execute without any errors, we have successfully deployed our python 
+application manually.
 
 
 ## Section-2 Deploy your application in AWS through automated scripts
@@ -150,9 +152,12 @@ If the last command executes without any errors, we have successfully deployed o
 
 Reference Links
 
-*   [Ansible](https://serversforhackers.com/c/an-ansible-tutorial) 
-*   [Ansible - Video](https://www.youtube.com/watch?v=dCQpaTTTv98)
+*   [Ansible Tutorial](https://serversforhackers.com/c/an-ansible-tutorial) 
+*   [Ansible - Tutorial](https://www.youtube.com/watch?v=dCQpaTTTv98)
 
-If we look at Part 2 & 3 from the previous section, it is just installing bunch of things into a server so that we can execute our application. 
-In this section, we will be automating those steps via **Ansible,  **So that after creating infrastructure all we need to do is execute ansible playbook.
-If you’re completely new to ansible, please read up on it. In short, Ansible is a YAML based commands executed sequentially to all the specified remote host.
+If we look at Part 2 & 3 from the previous section, it is just installing bunch of things into a server so that we can execute our 
+application. In this section, we will be automating those steps via **Ansible** So that 
+after creating infrastructure all we need to do is execute ansible playbook. 
+If you’re completely new to ansible, please read up on it. Briefly, Ansible is a YAML based commands 
+executed sequentially to all the specified remote host to configure the hosts.
+
