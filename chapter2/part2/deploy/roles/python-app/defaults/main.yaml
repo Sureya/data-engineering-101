@@ -1,6 +1,0 @@
-user: "ubuntu"
-repo_dest: "/home/{{ user }}/apps"
-venv_path: "/home/{{user}}/venvs"
-requirements_path: "{{ repo_dest }}/{{ app_path}}/requirements.txt"
-app_dir: "{{repo_dest}}/{{ app_path }}"
-venv_dir: "{{venv_path}}/{{app_name}}"
