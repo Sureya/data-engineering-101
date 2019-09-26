@@ -84,10 +84,9 @@ Reference Links
 *   Once the instance is created,  login into your server via SSH as described [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
 
 
-## 2.2: Configuration Management
+## 2.1.3: Configuration Management
 
-Before we can begin to package our Python application we need to install system packages, to get our server to the desired configuration. Since we will be running Python application which is downloaded from Github, let's install the packages needed for that.
-
+By this stage, we have the database and ec2 instance up and running. Now we have to SSH into ec2 instance and 
 
 ```bash
 # Install required system-level packages
@@ -101,7 +100,7 @@ yes | sudo apt-get install python3-venv
 
 
 
-## 2.3: Packaging & Deploying the application
+## 2.1.4: Packaging & Deploying the application
 
 After installing system packages we can start packaging our application by creating virtualenv and installing python dependencies into the env.
 
@@ -142,7 +141,8 @@ ${EXECUTABLE}/python ${EXECUTABLE_FILE_PATH} --api_key=${API_KEY} --database=${D
 If the last command executes without any errors, we have successfully deployed our python application manually.
 
 
-### 2.4 Automate configuration management & Application packaging
+
+## Section-2 Deploy your application in AWS through automated scripts
 
 [Repo Link](https://github.com/Sureya/data-engineering-101/tree/master/chapter3/part2/deploy)
 
