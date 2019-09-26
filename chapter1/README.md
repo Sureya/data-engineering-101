@@ -12,9 +12,9 @@ layout: post
 
 Reference Links
 
-*   [Python - 1](https://www.learnpython.org/)
-*   [Python - 2](https://codingbat.com/python)
-*   [Psql - Mac](https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb)
+*   [Python Basics](https://www.learnpython.org/)
+*   [Python Intermediate](https://codingbat.com/python)
+*   [Installing POSQL in Mac](https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb)
 
 
 # Project - 1
