@@ -54,34 +54,34 @@ Reference Links
 
 ### 2.1.1 - Create RDS database
 
-    *   Select RDS service and click create a database
-    *   Select PostgreSQL from engine option
-    *   Select Dev/test from use case
-    *   Select t2.micro for DB instance class
-    *   Give any suitable name for DB instance identifier
-    *   Give a suitable username and password, which we will be using in the later steps.
-    *   Click Next & Click create a database
-    *   Detailed instructions can be found [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html)
-    *   Remember to 
-        *   Enable public accessibility 
-        *   Create a security group called de-lab and use that for all the resources we create. 
-    *   Wait until the **status **value** **becomes Available.
-    *   Make note of host value from the database
+*   Select RDS service and click create a database
+*   Select PostgreSQL from engine option
+*   Select Dev/test from use case
+*   Select t2.micro for DB instance class
+*   Give any suitable name for DB instance identifier
+*   Give a suitable username and password, which we will be using in the later steps.
+*   Click Next & Click create a database
+*   Detailed instructions can be found [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html)
+*   Remember to 
+    *   Enable public accessibility 
+    *   Create a security group called de-lab and use that for all the resources we create. 
+*   Wait until the **status **value** **becomes Available.
+*   Make note of host value from the database
 
 
 ### 2.1.2 - Create an EC2 instance
 
-    *   Proceed to EC2 dashboard 
-    *   Quick guide for launching EC2 instance
-        *   Select Launch instance 
-        *   Select: **Ubuntu Server 18.04 LTS (HVM), SSD Volume Type **
-        *   Select**: t2.micro**
-        *   Click: **Next: Configure Instance Details**
-        *   Click: **Next: Add Storage**
-        *   Click: **Review & Launch**
-        *   When you press the launch button, you will be prompted to select the key pair if you already have one, otherwise you will be asked to create one, please secure the file in your local machine, we will be using that key pair for all our exercises.
-    *   Detailed instructions available [here](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-1-launch-instance.html)
-    *   Once the instance is created,  login into your server via SSH as described [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+*   Proceed to EC2 dashboard 
+*   Quick guide for launching EC2 instance
+    *   Select Launch instance 
+    *   Select: **Ubuntu Server 18.04 LTS (HVM), SSD Volume Type **
+    *   Select**: t2.micro**
+    *   Click: **Next: Configure Instance Details**
+    *   Click: **Next: Add Storage**
+    *   Click: **Review & Launch**
+    *   When you press the launch button, you will be prompted to select the key pair if you already have one, otherwise you will be asked to create one, please secure the file in your local machine, we will be using that key pair for all our exercises.
+*   Detailed instructions available [here](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/step-1-launch-instance.html)
+*   Once the instance is created,  login into your server via SSH as described [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
 
 
 ## 2.2: Configuration Management
