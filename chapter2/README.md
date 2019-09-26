@@ -86,7 +86,9 @@ Reference Links
 
 ## 2.1.3: Configuration Management
 
-By this stage, we have the database and ec2 instance up and running. Now we have to SSH into ec2 instance and 
+By this stage, we have the database and ec2 instance up and running. Now we have to SSH into ec2 
+instance and install all the necessary components so that we can run our python application to 
+fetch the data from the internet. 
 
 ```bash
 # Install required system-level packages
