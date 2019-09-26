@@ -323,5 +323,5 @@ At this stage, it is safe to consider the project **done**, from an application 
 To verify if the data has been fetched you execute the follwing SQL code in your database
 
 ```sql
-    SELECT * FROM  daily_weather ;
+SELECT * FROM  daily_weather ;
 ```
