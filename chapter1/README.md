@@ -19,10 +19,7 @@ Reference Links
 
 # Project - 1
 
-Let’s imagine you work in a company where your company needs to collect basic weather data for London every day starting today. 
-You are the engineer assigned to do this work, you think about the problem statement and you note that the requirement is not detailed, 
-A requirement should always be precise and scoped, so you ask your manager for following details so that you can start working on it.  
- 
+You’ve been tasked to collect basic weather data for London every day starting today. Initially, you think about the problem statement and ask the business for the following details so that you can break down business requirements into smaller Jira tickets.
 
 Details required to start coding
 *   Is there any specific data source that the company would like to or Can I use any data source?
@@ -320,5 +317,3 @@ if __name__ == '__main__':
 
 Since our code was modular, all we had to do was add couple of methods to include database connectivity.
 At this stage, it is safe to consider the project **done**, from an application development perspective.
-If you are interested in learning how to deploy this application in cloud, please refer [here](https://github.com/Sureya/data-engineering-101/tree/master/chapter2) 
-
