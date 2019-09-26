@@ -65,7 +65,7 @@ Reference Links
 *   Remember to 
     *   Enable public accessibility 
     *   Create a security group called de-lab and use that for all the resources we create. 
-*   Wait until the **status **value** **becomes Available.
+*   Wait until the *status value* becomes *Available*.
 *   Make note of host value from the database
 
 
