@@ -318,3 +318,10 @@ if __name__ == '__main__':
 
 Since our code was modular, all we had to do was add couple of methods to include database connectivity.
 At this stage, it is safe to consider the project **done**, from an application development perspective.
+
+
+To Verify if the data has been fetched you execute the follwing SQL code in your database
+
+```sql
+    SELECT * FROM  daily_weather ;
+```
