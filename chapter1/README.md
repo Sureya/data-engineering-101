@@ -320,5 +320,5 @@ if __name__ == '__main__':
 
 Since our code was modular, all we had to do was add couple of methods to include database connectivity.
 At this stage, it is safe to consider the project **done**, from an application development perspective.
-If you are interested in learning how to deploy this application in cloud, please refer [here](https://github.com/Sureya/data-engineering-101/tree/master/chapter3) 
+If you are interested in learning how to deploy this application in cloud, please refer [here](https://github.com/Sureya/data-engineering-101/tree/master/chapter2) 
 
