@@ -190,7 +190,9 @@ CREATE TABLE IF NOT EXISTS daily_weather(
 ```
 
 We have created a table with all desired columns , we also have created a column called "raw" which will store the entire
-JSON response we get from the API. This is just so in the future if we need to derive additional columns, we can do it without extracting the data again.
+JSON response we get from the API. This is just so, in the future if we need to derive additional columns, we can do it without extracting the data again.
+
+Now lets alter our python application to include the code that would store the data to the table.
 [fileLink](https://github.com/Sureya/data-engineering-101/blob/master/chapter2/version2.py)
 ```python
 # in-built
