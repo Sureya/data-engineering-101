@@ -86,7 +86,7 @@ Reference Links
 
 ## 2.2: Configuration Management
 
-	Before we can begin to package our Python application we need to install system packages, to get our server to the desired configuration. Since we will be running Python application which is downloaded from Github, let's install the packages needed for that.
+Before we can begin to package our Python application we need to install system packages, to get our server to the desired configuration. Since we will be running Python application which is downloaded from Github, let's install the packages needed for that.
 
 
 ```bash
