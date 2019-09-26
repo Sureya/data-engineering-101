@@ -13,20 +13,17 @@
     db_password: "{{ lookup('env','DB_PWD') }}"
     host: "{{ lookup('env','DB_HOST') }}"
 
-
   roles:
     - python-app
-    - common_tasks
 
   pre_tasks:
     - include: roles/common_tasks/ubuntu16_python2.yml
       static: yes
 
   post_tasks:
-    - name: Ensure python job that runs at 11"
+    - name: "Schedule job to run at 11:00 everyday" # 24 hour time format
       cron:
         name: "python-app-11"
         minute: "0"
         hour: "11"
         job: "cd {{app_dir}} ; {{venv_dir}}/bin/python3 {{executable}} --api_key={{api_key}} --database={{database_nme}} --user={{db_user}} --password={{db_password}} --host={{host}}"
-
