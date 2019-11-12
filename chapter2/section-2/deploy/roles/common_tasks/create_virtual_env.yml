@@ -8,12 +8,7 @@
 - name: create virtualenv directory if it does not already exist
   file: path={{ venv_dir }} state=directory
 
-- name: Check if path to requirements.txt exists
-  stat: path={{ requirements_path }}
-  register: check_requirements_path
-
 - name: install dependencies into a new virtualenv
-  when: check_requirements_path.stat.exists
   pip: requirements={{ requirements_path }}
        virtualenv="{{venv_dir}}/" virtualenv_python=python3
 
