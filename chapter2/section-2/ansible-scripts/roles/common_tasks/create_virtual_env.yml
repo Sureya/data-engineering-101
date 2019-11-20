@@ -10,5 +10,5 @@
 
 - name: install dependencies into a new virtualenv
   pip: requirements={{ requirements_path }}
-       virtualenv="{{venv_dir}}/" virtualenv_python=python3
+       virtualenv="{{venv_dir}}/" virtualenv_python=python3.6
 

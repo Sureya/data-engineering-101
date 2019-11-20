@@ -3,7 +3,7 @@
 staging
 dev
 prod
-
+creds
 
 
 *.tfvars
@@ -130,3 +130,4 @@ tmp/
 Pipfile.lock
 .vscode
 proj-creator.json
+creds/

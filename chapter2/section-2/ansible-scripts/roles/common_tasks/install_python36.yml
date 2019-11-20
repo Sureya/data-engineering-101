@@ -1,5 +1,18 @@
+- apt_repository:
+    repo: ppa:fkrull/deadsnakes
+    state: present
+
+- name: Update and upgrade apt packages
+  become: true
+  apt:
+    upgrade: yes
+    update_cache: yes
+
+
 - name: Install python 3.6
-  apt: name={{item}}
+  apt:
+    name: "{{item}}"
+    force_apt_get: true
   become: true
   become_user: root
   with_items:
